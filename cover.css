@@ -215,3 +215,10 @@ body {
 .back {
   transform: rotateY(180deg);
 }
+
+.folio-links {
+  text-decoration: none;
+}
+
+
+
