@@ -42,7 +42,7 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  background-image: url("page.jpeg");
+  background-image: url("../images/page.jpeg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
