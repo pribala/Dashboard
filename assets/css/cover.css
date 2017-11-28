@@ -224,6 +224,7 @@ body {
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
+  background: linear-gradient(to right, rgba(64,64,64,0), rgba(64,64,64,0.5));
 }
 
 
