@@ -27,14 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  /*background-color: #333;*/
-  background-image: url("page.jpeg");
-  background-repeat: no-repeat;
-  /*background-size: 100% 100%;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-   background-size: cover;
+  background-color: #EEEEEE;
 }
 
 body {
@@ -49,6 +42,12 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+  background-image: url("page.jpeg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -80,7 +79,6 @@ body {
 .nav-masthead .nav-link {
   padding: .25rem .25rem;
   font-weight: 700;
-  /*color: rgba(255,255,255,.5);*/
   color: #373240;
   background-color: transparent;
   border-bottom: .25rem solid transparent;
@@ -96,7 +94,6 @@ body {
 }
 
 .nav-masthead .active {
-  /*color: #FF296C;*/
   color: #fff;
 }
 
@@ -131,7 +128,6 @@ body {
  */
 
 .mastfoot {
-  /*color: rgba(255,255,255,.5);*/
   color: #373240;
 }
 
@@ -142,15 +138,15 @@ body {
 
 @media (min-width: 40em) {
   /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
+   .masthead {
+    position: absolute;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: absolute;
     bottom: 0;
   }
-
+  
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -170,4 +166,52 @@ body {
   .cover-container {
     width: 42rem;
   }
+}
+
+/* Portfolio section */
+
+.portfolio-section {
+  color: #373240;
+  background-color: #EEEEEE;
+}
+
+/* Flipping Animation */
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip {
+  transform: rotateY(180deg);
+}
+
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+   for firefox 31 
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
 }

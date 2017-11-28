@@ -13,31 +13,33 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="site-wrapper">
+	<!-- Cover page -->
+	<div class="site-wrapper mb-5">
 
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
 
+		  <!-- Navigation links -->	
           <header class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">Priya Balakrishnan</h3>
               <nav class="nav nav-masthead">
-                <a class="nav-link active" href="#">About</a>
-                <a class="nav-link" href="#">Portfolio</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link active" href="#aboutSection">About</a>
+                <a class="nav-link" href="#portfolioSection">Portfolio</a>
+                <a class="nav-link" href="#contactSection">Contact</a>
               </nav>
             </div>
           </header>
 
           <main role="main" class="inner cover">
             <h1 class="cover-heading">Full Stack Web Developer</h1>
-            <p class="lead summary">Designing websites that are functional yet beautiful in their simplicity.</p>
+            <p class="lead">Designing websites that are functional yet beautiful in their simplicity.</p>
             <p class="lead">
                 <img class= "rounded-circle img-fluid" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAu5AAAAJDVjYWNhNzczLTA2YjAtNGQwZS05MWM3LTgxMDRkMTIxOTY2Mg.jpg">
             </p>
           </main>
-
+		  	
           <footer class="mastfoot">
             <div class="inner">
               <p>@Copyright Priya Balakrishnan</p>
@@ -49,5 +51,82 @@
       </div>
 
     </div>
+    
+    <div class="container">
+	
+	<!-- About Section -->
+    <a name="aboutSection">
+    	<div class="row mb-5">
+	      <div class="col pt-5">
+	      	<h3 class="text-center">ABOUT ME</h3>
+	        <div class="row mt-4">
+	          <div class='col'>
+	            <p>Results-oriented software professional with excellent problem solving skills. An avid and motivated learner passionate about technology, I am constantly looking to upgrade my skill set to keep current with the industry. 
+	            Proficient in web technologies with a broad range of experience in both front and back-end.
+	            I enjoy the creative aspect of software development and take pride in a job well done. I believe development is a collaborative process and enjoy working as part of a team.</p>
+	          </div>
+	        </div>
+	      </div>
+    	</div>
+    </a>
+
+    <!-- Portfolio Section -->
+    <a name="portfolioSection">
+     	<div class="row mb-5">
+	      <div class='col pt-5 portfolio-section'>
+	        <h3 class="text-center">PORTFOLIO</h3>
+			
+	        <div class="row mt-4">
+		        <div class="col-sm">
+		        	<div class="flip-container">
+						<div id="mapProject">
+							<div class="front">
+								<!-- front content -->
+		            			<a href="https://pribala.github.io/Neighborhood-Map/" target="_blank"><img class="img-fluid portfolio-img" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507513804/map-project_mzbsjy.png"></a>
+		            		</div>
+							<div class="back">
+								<!-- back content -->
+								<p>A single page application featuring a map of New York City with seven prominent New York landmarks highlighted. The application utilizes the Google Maps API for displaying a fullscreen map and the MediaWiki API to provide unique information for the highlighted locations. All data APIs used in the project load asynchronously.</p>
+
+								<p>KnockoutJS is used to implement a dynamic UI update and provides  a filter option. When a filter is applied, the locations in the list view and on the map are dynamically updated displaying only the filtered subset of locations and map markers.</p>
+							</div>	
+						</div>
+					</div>		
+		        </div>
+		        <div class="col-sm">
+		        	<div class="flip-container">
+						<div id="shoppingSite">
+							<div class="front">
+								<!-- front content -->
+								 <a href="https://pribala.github.io/Project-Scheduler/" target="_blank"><img class="img-fluid portfolio-img" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507513949/scheduler-project_tinjrr.png"></a>
+							</div>
+							<div class="back">
+								<!-- back content -->
+								<p>A daily planning aid that helps users to view their friends /colleagues /instructors/ Ta’s calendar and plan or schedule appointment with them.</p>
+
+								<p>All the group members publish their public google calendars which can be accessed from a single dashboard making it simple to schedule time with any member. The event is added to the member's calendar and notification is sent by email to all the attendees. </p>
+							</div>
+						</div>
+					</div>
+		        </div>
+		    </div> 
+			    <div class="row mt-4">
+					<div class="col-sm">
+						front
+					</div>
+					<div class="col-sm">
+
+					</div>
+				</div>
+	   	</div> 
+	</div>	
+    </a> 
+    </div>
+    <script>
+    	$(".flip-container").hover(function(e){
+    		//e.preventDefault();
+    		$(this).toggleClass("flipper");
+    	});
+    </script>
 </body>
 </html>
