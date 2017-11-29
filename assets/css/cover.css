@@ -263,7 +263,7 @@ body {
   transform: scaleX(1);
 }
 
-.projLink:after{
+.projLink:after {
   content: '' attr(data-hover) '';
   width: 0;
   overflow: hidden;
@@ -274,18 +274,20 @@ body {
   top: 0;
 }
 
-.projLink:hover:after, .projLink:focus:after{
+.projLink:hover:after, .projLink:focus:after {
   width: 100%  
 }
 
 @media only screen and (max-width: 1024px) {
-    .site-wrapper { 
+   /* .site-wrapper { 
         background-image: url("../images/mountain.jpeg"); 
     }
     .mastfoot {
       color: #fff;
-    }
+    }*/
 }
+
+/* Modal styles */
 
 .modal-dialog {
       width: 100%;
@@ -298,5 +300,10 @@ body {
       border-radius: 0;
       color:black;
       overflow:auto;
+      background-color: #686868;
+}
+
+.repo, .demo {
+  color:  #DCDCDC;
 }
 
