@@ -42,8 +42,8 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  background-image: url("../images/page.jpeg");
-  background-repeat: no-repeat;
+  background: url("../images/comp3.jpeg") no-repeat center center;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -112,7 +112,7 @@ body {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding: 0 .5rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -148,10 +148,13 @@ body {
   }
   
   /* Start the vertical centering */
-  .site-wrapper-inner {
+  /*.site-wrapper-inner {
     vertical-align: middle;
   }
-
+*/
+.cover-heading {
+  margin-top: 25%;
+}
   /* Handle the widths */
   .masthead,
   .mastfoot,
@@ -278,13 +281,24 @@ body {
   width: 100%  
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 700px) {
    /* .site-wrapper { 
         background-image: url("../images/mountain.jpeg"); 
     }
     .mastfoot {
       color: #fff;
     }*/
+    .cover-heading {
+      margin-top: 0;
+    }
+    .lead {
+      /*color: #FF5733;*/
+      color: #CB4335;
+    }
+    .mastfoot {
+      margin-top: 20%;
+      color: #fff;
+    }
 }
 
 /* Modal styles */
@@ -294,6 +308,7 @@ body {
       height: 100%;
       padding: 0;
       margin:0;
+      border: 2px solid black;
 }
 .modal-content {    
       height: 100%;
