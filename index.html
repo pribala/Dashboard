@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- CSS -->
@@ -21,19 +22,25 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
+		
 		  <!-- Navigation links -->	
           <header class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">Priya Balakrishnan</h3>
-              <nav class="nav nav-masthead">
-                <a class="nav-link" href="#aboutSection">About</a>
-                <a class="nav-link" href="#portfolioSection">Portfolio</a>
-                <a class="nav-link" href="#contactSection">Contact</a>
+			
+              <nav class="nav navbar-expand-lg navbar-light nav-masthead">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    			<span class="navbar-toggler-icon"></span>
+  				</button>
+  				<div class="collapse navbar-collapse" id="navbarNav">
+	                <a class="nav-link" href="#aboutSection">About</a>
+	                <a class="nav-link" href="#portfolioSection">Portfolio</a>
+	                <a class="nav-link" href="#contactSection">Contact</a>
+	            </div>    
               </nav>
             </div>
           </header>
-
+		
           <main role="main" class="inner cover">
             <h1 class="cover-heading">Full Stack Web Developer</h1>
             <p class="lead">Designing websites that are functional yet beautiful in their simplicity.</p>
@@ -82,110 +89,99 @@
 			<hr>
 	        <div class="row mt-5 mb-5">
 		        <div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="mapProject">
+		        	<div class="flip-container mb-2" id="mapProject">
+						<!-- <div id="mapProject">  -->
 							<div class="front">
 								<!-- front content -->
 		            			<img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507513804/map-project_mzbsjy.png">
 		            		</div>
 							<div class="back p-2 rounded">
 								<!-- back content -->
-								<p>A single page application featuring a map of New York City with seven prominent New York landmarks highlighted. The application utilizes the Google Maps API for displaying a fullscreen map and the MediaWiki API to provide unique information for the highlighted locations. All data APIs used in the project load asynchronously.</p>
-
-								<p>KnockoutJS is used to implement a dynamic UI update and provides  a filter option. When a filter is applied, the locations in the list view and on the map are dynamically updated displaying only the filtered subset of locations and map markers.</p>
+								<p>A single page application featuring a map of New York City with prominent New York landmarks highlighted. The application utilizes the Google Maps API for displaying a fullscreen map and the MediaWiki API to provide unique information for the highlighted locations.</p><p> KnockoutJS is used to implement a dynamic UI update.</p>
 							</div>	
-						</div>
+						<!-- </div> -->
 					</div>
-					<span><a class="projLink" data-hover="Neighborhood Map" href="https://pribala.github.io/Neighborhood-Map/" target="_blank">Neighborhood Map</a></span>		
+					<span><a class="projLink" data-hover="Neighborhood Map" href="https://pribala.github.io/Neighborhood-Map/" target="_blank">Neighborhood Map</a></span>	
 		        </div>
 		        <div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="shoppingSite">
+		        	<div class="flip-container mb-2" id="shoppingSite">
+						<!-- <div id="shoppingSite"> -->
 							<div class="front">
 								<!-- front content -->
 								 <img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1511839017/shop_bqg2j5.png">
 							</div>
 							<div class="back p-2 rounded">
 								<!-- back content -->
-								<p>YoreBazaar is a shopping site that aims to provide a more personalized shopping experience to its users. A registered user on the site can create multiple profiles for each member of their family or friends. Each individual profile has an associated cart and cart items can be deleted/updated. Orders can be viewed for each profile thus tracking individual orders and total expense for each member.</p>
-
-								<p>The application is built with MySQL, Node, Express, Sequelize to query and route data in the app, and Handlebars to generate the HTML.</p>
+								<p>YoreBazaar is a shopping site that aims to provide a more personalized shopping experience to its users. A registered user on the site can create multiple profiles for each member of their family or friends. Each individual profile has an associated cart and cart items can be deleted/updated.</p><p>The application is built with MySQL, Node, Express, Sequelize and Handlebars.</p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 					<span><a class="projLink" data-hover="Yore Bazaar" href="https://infinite-hamlet-30446.herokuapp.com/" target="_blank">Yore Bazaar</a></span>
 		        </div>
 		    </div> 
 		    <div class="row mt-5 mb-5">
 				<div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="scheduler">
+		        	<div class="flip-container mb-2" id="scheduler">
+						<!-- <div id="scheduler"> -->
 							<div class="front">
 								<!-- front content -->
 								 <img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507513949/scheduler-project_tinjrr.png">
 							</div>
-							<div class="back p-3 rounded">
+							<div class="back p-2 rounded">
 								<!-- back content -->
-								<p>A daily planning aid that helps users to view their friends /colleagues /instructors/ Ta’s calendar and plan or schedule appointment with them.</p>
-
-								<p>All the group members publish their public google calendars which can be accessed from a single dashboard making it simple to schedule time with any member. The event is added to the member's calendar and notification is sent by email to all the attendees. </p>
+								<p>A daily planning aid that helps users to view their friends /colleagues /instructor's calendar and schedule appointment with them. All the group members publish their public google calendars which can be accessed from a single dashboard making it simple to schedule time with any member.</p><p>The event is added to the member's calendar and notification is sent by email to all the attendees.</p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 					<span><a class="projLink" data-hover="Meeting Assistant" href="https://pribala.github.io/Project-Scheduler/" target="_blank">Meeting Assistant</a></span>
 		        </div>
 				<div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="trivia">
+		        	<div class="flip-container mb-2" id="trivia">
+						<!-- <div id="trivia"> -->
 							<div class="front">
 								<!-- front content -->
 								 <img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507512964/trivia-project_vhogmt.png">
 							</div>
-							<div class="back p-3 rounded">
+							<div class="back p-2 rounded">
 								<!-- back content -->
 								<p>Trivia game using JavaScript for the logic and jQuery to manipulate HTML.</p>
 
 								<p>Trivia questions with multiple choice. The player has a limited amount of time to finish the quiz.The game ends when the time runs out. The page reveals the number of questions that players answer correctly and incorrectly.</p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 					<span><a class="projLink" data-hover="Trivia Fun" href="https://pribala.github.io/TriviaGame/" target="_blank">Trivia Fun</a></span>
 		        </div>
 			</div>
 			<div class="row mt-5 mb-5">
 				<div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="trainProj">
+		        	<div class="flip-container mb-2" id="trainProj">
+						<!-- <div id="trainProj"> -->
 							<div class="front">
 								<!-- front content -->
 								 <img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1507512615/train-project_rqnror.png">
 							</div>
 							<div class="back p-2 rounded">
 								<!-- back content -->
-								<p>The app displays a list of trains with their destination, frequency, next arrival time and minutes till the next train. Authentication is done through Google SignIn. Only an authenticated user can edit data.</p>
-
-								<p>An authenticated user has the ability to add, delete and update train records. The train time updates every minute to reflect realtime data.
+								<p>The app displays a list of trains with their destination, frequency, next arrival time and minutes till the next train. Authentication is done through Google SignIn. Only an authenticated user can edit data. </p><p>The train time updates every minute to reflect realtime data.
 								The app uses Firebase database for persistent data storage and authentication.</p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 					<span><a class="projLink" data-hover="En Route" href="https://pribala.github.io/TrainScheduler/" target="_blank">En Route</a></span>
 		        </div>
 				<div class="col-sm">
-		        	<div class="flip-container mb-2">
-						<div id="hangman">
+		        	<div class="flip-container mb-2" id="hangman">
+						<!-- <div id="hangman"> -->
 							<div class="front">
 								<!-- front content -->
 								 <img class="img-fluid rounded" src="http://res.cloudinary.com/drlum7v3x/image/upload/v1511842479/hangman-project_o0scvw.png">
 							</div>
 							<div class="back p-2 rounded">
 								<!-- back content -->
-								<p>Classic Hangman game in Javascript where the player is given a word and has 12 chances to guess the word one letter at a time.</p>
-
-								<p> Player can guess a letter by pressing a keyboard key. If the letter is present in the word, the blank spaces are replaced with the letter at the right position. If the letter occurs more than once in the word, each occurence of the letter is replaced for a correct guess.
-								A letter can be guessed only once and for each wrong guess, the chances are decreased by 1 and hangman image is drawn on the canvas part by part till all the twelve chances are used up. </p>
+								<p>Classic Hangman game in Javascript where the player is given a word and has 12 chances to guess the word one letter at a time.</p><p> For each wrong guess, the chances are decreased by 1 and hangman image is drawn on the canvas part by part till all the twelve chances are used up.</p>
 							</div>
-						</div>
+						<!-- </div> -->
 					</div>
 					<span><a class="projLink" data-hover="Hangman" href="https://pribala.github.io/Hangman-Game/" target="_blank">Hangman</a></span>
 		        </div>
@@ -193,6 +189,25 @@
 	   	</div> 
 	</div>	
     </a> 
+    <!-- Modal -->
+	<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title mx-auto" id="infoModalLabel"></h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      </div>
+	      <div class="modal-footer mx-auto">
+	       	<a class="repo" href="#" target="_blank">GitHub Repo</a>
+	       	<a class="demo" href="#" target="_blank">Project Link</a>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
     <!-- Contact Section -->
     <a name="contactSection">
