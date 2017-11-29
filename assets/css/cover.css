@@ -312,10 +312,10 @@ body {
 /* Modal styles */
 
 .modal-dialog {
-      width: 100%;
-      height: 100%;
+      width: 90%;
+      height: 90%;
       padding: 0;
-      margin:0;
+      margin:0 auto;
       border: 2px solid black;
 }
 .modal-content {    
@@ -323,7 +323,7 @@ body {
       border-radius: 0;
       color:black;
       overflow:auto;
-      background-color: #686868;
+      background-color: #DD998A;
 }
 
 .repo, .demo {
