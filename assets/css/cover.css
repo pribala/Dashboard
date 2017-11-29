@@ -260,7 +260,7 @@ body {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #F30D56;
+  background-color: #CB4335;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -279,7 +279,7 @@ body {
   width: 0;
   overflow: hidden;
   transition: width .1s ease-in-out;  
-  color: #F30D56;
+  color: #CB4335;
   position: absolute;
   left: 0;
   top: 0;
@@ -329,4 +329,3 @@ body {
 .repo, .demo {
   color:  #DCDCDC;
 }
-
