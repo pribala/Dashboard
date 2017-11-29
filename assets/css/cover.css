@@ -309,6 +309,11 @@ body {
       margin-top: 20%;
       color: #fff;
     }
+
+    .site-wrapper {
+      background-color: rgba(255,255,255,0.3);
+      background-blend-mode: lighten;
+    }
 }
 
 /* Modal styles */
