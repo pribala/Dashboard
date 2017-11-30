@@ -310,10 +310,10 @@ body {
       color: #fff;
     }
 
-    .site-wrapper {
+    /*.site-wrapper {
       background-color: rgba(255,255,255,0.3);
       background-blend-mode: lighten;
-    }
+    }*/
 }
 
 /* Modal styles */
@@ -336,4 +336,8 @@ body {
 
 .repo, .demo {
   color:  #DCDCDC;
+}
+
+.changeTextColor {
+  color: #fff;
 }

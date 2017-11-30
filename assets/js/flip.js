@@ -132,4 +132,10 @@ $('document').ready(function(){
 	// 	$('.nav-link').removeClass('active');
 	// 	$(this).addClass("active");
 	// });
+
+	$(".navbar-toggler").click(function(){
+		if($(window).width() < 700){
+			$(".cover-heading").toggleClass("changeTextColor");
+		}
+	})
 });
