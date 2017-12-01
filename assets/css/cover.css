@@ -72,6 +72,7 @@ body {
 
 .masthead {
   margin-bottom: 2rem;
+
 }
 
 .masthead-brand {
@@ -174,7 +175,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 50rem;
   }
 }
 
